@@ -5,8 +5,34 @@ public class galgjeSilverMaster {
     public static void main (String[] args){
 
         Scanner input = new Scanner(System.in);
-
         System.out.println("Welkom bij galgje een game die je laat hangen van spanning.");
+        System.out.println("Deze game is voor 2 players. De eerste player typt een woord in dat de andere moet raden.");
+        System.out.println("Als je een fout woord invoert dan komt er een plaatje bij de galg. intotaal heb je 5 pogingen.");
+        System.out.println("\n");
+
+        System.out.println("type start om te starten en type stop om te stoppen");
+        System.out.println();
+
+        String Exit = input.nextLine();
+//        while(!(Exit.equalsIgnoreCase("stop") || !Exit.equalsIgnoreCase("exit"))){
+//            System.out.println("Je wilt stoppen.");
+//            System.exit(0);
+//
+//            if (!(Exit.equalsIgnoreCase("exit") || !Exit.equalsIgnoreCase("start"))){
+//                System.out.println("laten we beginnen.");
+//            }
+//        }
+
+        if (Exit.equalsIgnoreCase("stop")){
+            System.out.println("Je wilt stoppen.");
+            System.exit(0);
+        } else {
+            if (Exit.equalsIgnoreCase("start")){
+                System.out.println("Laten we beginnen.");
+            }
+        }
+
+
         System.out.println("");
         System.out.println("Voer hier het woord in dat je wilt gebruiken als antwoord");
         String woord = input.nextLine();
@@ -30,8 +56,8 @@ public class galgjeSilverMaster {
         boolean radenBevatGok;  // boolean voor raad in alle geraaden letters
         String gokken = ""; // slaat alle geraade letters op
         boolean woordBevatGok; // boolean voor raad in woord1
-//hallo
-        while (incorrect < 5 && woord1.contains("_")){ // while loop begint
+
+        while (incorrect < 5 && woord1.contains("_")) { // while loop begint
 
             System.out.println(woord1);
             System.out.println("\n");
