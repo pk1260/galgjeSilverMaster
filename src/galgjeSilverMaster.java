@@ -30,7 +30,7 @@ public class galgjeSilverMaster {
         boolean radenBevatGok;  // boolean voor raad in alle geraaden letters
         String gokken = ""; // slaat alle geraade letters op
         boolean woordBevatGok; // boolean voor raad in woord1
-
+//hallo
         while (incorrect < 5 && woord1.contains("_")){ // while loop begint
 
             System.out.println(woord1);
